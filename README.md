@@ -211,7 +211,7 @@ Return a specific note title and content
     
 ### Errors
 
-All the apis verify tokens and return a response `HTTP/1.1 401 Unauthorized` when not valid or expired `HTt/1.1 400 Bad Request` with 
+All the apis verify tokens and return a response `HTTP/1.1 401 Unauthorized` when not valid or expired and `HTTP/1.1 400 Bad Request` with request errors
 
 
 
