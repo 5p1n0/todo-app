@@ -1,0 +1,58 @@
+GET http://localhost:3001/api/notes
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ1c2VyMSIsImlhdCI6MTY1NDUwNzkwMH0.goEJqbmgQFWXFQT2gf3GIMNIpquyq4emW4VzUECLrxI
+
+####
+
+GET http://localhost:3001/api/notes/1
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ1c2VyMSIsImlhdCI6MTY1NDUwNzkwMH0.goEJqbmgQFWXFQT2gf3GIMNIpquyq4emW4VzUECLrxI
+
+
+####
+
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ1c2VyMSIsImlhdCI6MTY1NDY4MjUyMSwiZXhwIjoxNjU0Njg2MTIxfQ.YDreftJquMC65WvK4KFoV8a5je-Qk2lDha-wOO9peII
+
+{
+    "title": "New SUPER note!",
+    "content": "ULTRA interesting text",
+    "date": "2022-06-06 12:03:03"
+
+}
+
+####
+
+PUT http://localhost:3001/api/notes/2
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ1c2VyMSIsImlhdCI6MTY1NDY4MjUyMSwiZXhwIjoxNjU0Njg2MTIxfQ.YDreftJquMC65WvK4KFoV8a5je-Qk2lDha-wOO9peII
+
+{
+    "title": "Second (UPDATED) note!",
+    "content": "Super interesting (UPDATED) text",
+    "date": "2022-06-06 12:03:03"
+}
+
+###
+
+DELETE http://localhost:3001/api/notes/3
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ1c2VyMSIsImlhdCI6MTY1NDUwNzkwMH0.goEJqbmgQFWXFQT2gf3GIMNIpquyq4emW4VzUECLrxI
+
+###
+
+POST http://localhost:3001/api/users/
+Content-Type: application/json
+
+{
+    "username": "user1",
+    "password": "ultrastrongpass"
+}
+
+####
+
+POST http://localhost:3001/api/login/
+Content-Type: application/json
+
+{
+    "username": "user1",
+    "password": "ultrastrongpass"
+}
