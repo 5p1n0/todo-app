@@ -1,45 +1,45 @@
-GET http://localhost:3001/api/notes
+GET https://luca.tech-challenges.toduba.it/api/notes
 Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ1c2VyMSIsImlhdCI6MTY1NDUwNzkwMH0.goEJqbmgQFWXFQT2gf3GIMNIpquyq4emW4VzUECLrxI
 
 ####
 
-GET http://localhost:3001/api/notes/1
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ1c2VyMSIsImlhdCI6MTY1NDUwNzkwMH0.goEJqbmgQFWXFQT2gf3GIMNIpquyq4emW4VzUECLrxI
+GET https://luca.tech-challenges.toduba.it/api/notes/5
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJ1c2VyMyIsImlhdCI6MTY1NDcxNzUwNSwiZXhwIjoxNjU0NzIxMTA1fQ.T6MVmrroUQR24sjuGZkZ_cqtAijnkjVYe4iqPVMpGWo
 
 
 ####
 
-POST http://localhost:3001/api/notes
+POST https://luca.tech-challenges.toduba.it/api/notes
 Content-Type: application/json
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ1c2VyMSIsImlhdCI6MTY1NDY4MjUyMSwiZXhwIjoxNjU0Njg2MTIxfQ.YDreftJquMC65WvK4KFoV8a5je-Qk2lDha-wOO9peII
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJ1c2VyMyIsImlhdCI6MTY1NDcxNzUwNSwiZXhwIjoxNjU0NzIxMTA1fQ.T6MVmrroUQR24sjuGZkZ_cqtAijnkjVYe4iqPVMpGWo
 
 {
-    "title": "New SUPER note!",
-    "content": "ULTRA interesting text",
+    "title": "New note!",
+    "content": "New interesting text",
     "date": "2022-06-06 12:03:03"
 
 }
 
 ####
 
-PUT http://localhost:3001/api/notes/2
+PUT https://luca.tech-challenges.toduba.it/api/notes/1
 content-type: application/json
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ1c2VyMSIsImlhdCI6MTY1NDY4MjUyMSwiZXhwIjoxNjU0Njg2MTIxfQ.YDreftJquMC65WvK4KFoV8a5je-Qk2lDha-wOO9peII
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJ1c2VyMyIsImlhdCI6MTY1NDcxNzUwNSwiZXhwIjoxNjU0NzIxMTA1fQ.T6MVmrroUQR24sjuGZkZ_cqtAijnkjVYe4iqPVMpGWo
 
 {
-    "title": "Second (UPDATED) note!",
-    "content": "Super interesting (UPDATED) text",
+    "title": "New (UPDATED) note!",
+    "content": "New (UPDATED) text!",
     "date": "2022-06-06 12:03:03"
 }
 
 ###
 
-DELETE http://localhost:3001/api/notes/3
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ1c2VyMSIsImlhdCI6MTY1NDUwNzkwMH0.goEJqbmgQFWXFQT2gf3GIMNIpquyq4emW4VzUECLrxI
+DELETE https://luca.tech-challenges.toduba.it/api/notes/1
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJ1c2VyMyIsImlhdCI6MTY1NDcxNzUwNSwiZXhwIjoxNjU0NzIxMTA1fQ.T6MVmrroUQR24sjuGZkZ_cqtAijnkjVYe4iqPVMpGWo
 
 ###
 
-POST http://localhost:3001/api/users/
+POST https://luca.tech-challenges.toduba.it/api/users/
 Content-Type: application/json
 
 {
@@ -49,7 +49,7 @@ Content-Type: application/json
 
 ####
 
-POST http://localhost:3001/api/login/
+POST https://luca.tech-challenges.toduba.it/api/login/
 Content-Type: application/json
 
 {
