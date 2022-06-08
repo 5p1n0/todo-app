@@ -1,6 +1,12 @@
 # To Do
 A simple to-do app
 
+# Database tables
+
+users -> id (pk) - username - password
+notes -> id (pk) - title - content - date - userid (fk - users.id) 
+
+
 # REST API
 The REST API is described below
 
@@ -145,7 +151,7 @@ Return a specific note title and content
 
 ## Users requests
 
-### Request - Sign Up
+### Request - Sign-Up
 
 `POST https://luca.tech-challenges.toduba.it/api/users/`
 `Content-Type: application/json`
@@ -176,7 +182,7 @@ Return a specific note title and content
       "warningStatus": 0
     }
 
-### Request - Log In
+### Request - Login
 
 `POST https://luca.tech-challenges.toduba.it/api/users/`
 `Content-Type: application/json`
@@ -202,3 +208,10 @@ Return a specific note title and content
       "token": token,
       "username": "user"
     }
+    
+### Errors
+
+All the apis verify tokens and return a response `HTTP/1.1 401 Unauthorized` when not valid or expired `HTt/1.1 400 Bad Request` with 
+
+
+
