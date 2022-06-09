@@ -44,7 +44,7 @@ notesRouter.get('/:id', async (request, response) => {
 
 	const notes = await db.query(
 		`SELECT title, content FROM notes WHERE userid = ? AND id = ?`,
-		[decodedToken.id]
+		[decodedToken.id, request.params.id]
 	)
 
 	console.log("notes:", notes)
